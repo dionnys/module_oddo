@@ -125,6 +125,7 @@ Puedes verificar la funcionalidad accediendo a la vista de películas en Odoo y 
 ### 🐳 Contenedores Docker en ejecución
 ![Docker Containers](./docs/images/docker_containers.png)
 
+
 ### 🗃️ Vista de la tabla `movie_movie` en la base de datos
 ![Base de Datos](./docs/images/db_table_view.png)
 
