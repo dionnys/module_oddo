@@ -11,6 +11,11 @@
         'data/config_parameters.xml',
         'data/cron.xml',
     ],
+    'assets': {
+        'web.assets_backend': [
+        'movie_manager/static/src/js/movie_autorefresh.js',
+        ],
+    },
     'installable': True,
     'application': True,
 }
