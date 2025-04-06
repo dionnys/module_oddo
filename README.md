@@ -7,7 +7,7 @@ Este repositorio contiene un módulo personalizado para **Odoo 16**, diseñado p
 ## 📦 Descripción General del Módulo
 
 El módulo `movie_manager` permite:
-- Definir un modelo de películas con Titulo y ranking.
+- Definir un modelo de películas con Título y ranking.
 - Ejecutar tareas programadas (cron) que consultan una API REST para registrar películas.
 - Consultar las películas mejor clasificadas mediante un endpoint REST (`/api/top_movies`).
 
@@ -81,6 +81,7 @@ Consulta las 10 mejores películas:
 ```bash
 curl http://localhost:8069/api/top_movies
 ```
+
 Respuesta esperada (JSON):
 ```json
 [
@@ -95,13 +96,41 @@ Respuesta esperada (JSON):
 
 ---
 
+## 🔐 Acceso a Odoo
+
+Para acceder a Odoo usa las siguientes credenciales por defecto:
+
+Usuario: admin
+
+Contraseña: admin
+
+
 ## 🧪 Pruebas
 
 Puedes verificar la funcionalidad accediendo a la vista de películas en Odoo y revisando si se agregan registros cada minuto. También valida que el endpoint `/api/top_movies` responda correctamente.
 
 ---
 
-## 🧐 Notas
+## 🖼️ Capturas de Pantalla
+
+### 🔐 Login de Odoo
+![Login](./docs/images/login.png)
+
+### 🎬 Vista de Películas
+![Vista Películas](./docs/images/movie_list.png)
+
+### 🌐 Respuesta del Endpoint REST
+![Respuesta API](./docs/images/api_response.png)
+
+### 🐳 Contenedores Docker en ejecución
+![Docker Containers](./docs/images/docker_containers.png)
+
+### 🗃️ Vista de la tabla `movie_movie` en la base de datos
+![Base de Datos](./docs/images/db_table_view.png)
+
+---
+
+## 📝 Notas
 
 - Los parámetros `movie_manager.api_url` y `movie_manager.api_key` se cargan desde `.env` al archivo `config_parameters.xml`.
 - El módulo está ubicado en `addons/movie_manager/`.
@@ -121,7 +150,7 @@ Puedes verificar la funcionalidad accediendo a la vista de películas en Odoo y 
 ├── odoo.conf
 ├── .env
 ├── prepare_env.sh
-└── README.md
+├── README.md
 ```
 
 ---
@@ -129,4 +158,3 @@ Puedes verificar la funcionalidad accediendo a la vista de películas en Odoo y 
 ## 🧑‍💻 Autor
 
 Desarrollado por Dionnys para la prueba técnica de Odoo. ✨
-
