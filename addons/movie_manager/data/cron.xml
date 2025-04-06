@@ -1,0 +1,12 @@
+<odoo>
+    <record id="ir_cron_fetch_movies" model="ir.cron">
+        <field name="name">Importar películas cada minuto</field>
+        <field name="model_id" ref="model_movie_movie"/>
+        <field name="state">code</field>
+        <field name="code">model.fetch_movies_from_api()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+        <field name="active">True</field>
+    </record>
+</odoo>
