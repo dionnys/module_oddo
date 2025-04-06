@@ -3,7 +3,7 @@
         <field name="name">movie.movie.tree</field>
         <field name="model">movie.movie</field>
         <field name="arch" type="xml">
-            <tree>
+            <tree js_class="auto_refresh_list">
                 <field name="name"/>
                 <field name="ranking"/>
             </tree>
